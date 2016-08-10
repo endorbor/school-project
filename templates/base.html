@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'layout/styles/main.css' %}" rel="stylesheet" type="text/css" media="all">
+    <link href="{% static 'layout/styles/mediaqueries.css' %}" rel="stylesheet" type="text/css" media="all">
+    <!--[if lt IE 9]>
+    <link href="{% static 'layout/styles/ie/ie8.css' %}" rel="stylesheet" type="text/css" media="all">
+    <script src="{% static 'layout/scripts/ie/css3-mediaqueries.min.js' %}"></script>
+    <script src="{% static 'layout/scripts/ie/html5shiv.min.js' %}"></script>
+    <![endif]-->
+    <!-- Slider -->
+    <link href="{% static 'layout/scripts/responsiveslides.js-v1.53/responsiveslides.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body class="">
+<div class="wrapper row1">
+  <header id="header" class="full_width clear">
+    <div id="hgroup">
+      <h1><a href="index.html">{{ About.school_name }}</a></h1>
+      <h2>اولین دبستان قرآنی در پردیسان</h2>
+    </div>
+    <div id="header-contact">
+      <ul class="list none">
+        <li><span class="icon-envelope" style="float:left; margin:7px 7px 0 0;"></span> <a href="#"></a></li>
+        <li>025-32800444<span class="icon-phone"></span> </li>
+      </ul>
+    </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+    <ul class="clear">
+        <li class="active"><a href="index.html">صفحه اصلی</a></li>
+
+        <li><a class="drop" href="#">سامانه</a>
+	<ul>
+	<li><a href="pages/login-1.html">ورود  به آموزش</a></li>
+	<li><a href="pages/pish.html">پیش ثبت نام</a></li>
+	</ul>
+
+	<li><a class="drop" href="#">فعالیت ها </a>
+	<ul>
+	<li><a href="pages/activities.html">پرورشی</a></li>
+	<li><a href="pages/activities3.html">آموزشی</a></li>
+	<li><a href="pages/activities2.html">بهداشتی</a></li>
+	<li><a href="pages/activities1.html">مشاوره</a></li>
+	</ul>
+
+        <li><a href="gallery-layouts/gallery.html">گالری تصاویر</a></li>
+        <li><a href="pages/team-member.html">کادر پرسنل</a></li>
+        <li><a href="pages/contact.html">ارتباط با ما</a></li>
+	<li><a href="pages/about-us.html">درباره ما</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+    {% block slider %}
+    {% endblock %}
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <div id="container">
+      {% block content %}
+      {% endblock %}
+  </div>
+</div>
+
+<!-- Footer -->
+
+<div class="wrapper row2">
+	<div id="footer" class="clear">
+
+	<div class="one_quarter">
+      <h2 id="contact-us" class="footer_title first">ارتباط با ما</h2>
+      <form class="rnd5" action="#" method="post">
+        <div class="form-input clear">
+          <label for="ft_author">نام  <span class="required">*</span><br>
+            <input type="text" name="ft_author" id="ft_author" value="" size="22">
+          </label>
+          <label for="ft_email">ایمیل <span class="required">*</span><br>
+            <input type="text" name="ft_email" id="ft_email" value="" size="22">
+          </label>
+        </div>
+        <div class="form-message">
+          <textarea name="ft_message" id="ft_message" cols="25" rows="10"></textarea>
+        </div>
+        <p>
+          <input type="submit" value="ارسال" class="button small orange">
+          &nbsp;
+          <input type="reset" value="تنظیم مجدد" class="button small grey">
+        </p>
+      </form>
+    </div>
+
+
+    <div class="one_quarter">
+      <h2 class="footer_title">نفرات برتر مسابقات </h2>
+      <ul id="ft_gallery" class="nospace spacing clear">
+<p>مسابقات احکام</p>
+        <li class="one_third first"><a href="#"><img src="{% static 'images/demo/11.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/12.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/13.gif' %}" alt=""></a></li>
+<p>مسابقات قرآن</p>
+        <li class="one_third first"><a href="#"><img src="{% static 'images/demo/14.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/15.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/16.gif' %}" alt=""></a></li>
+<p>مسابقات خوشنویسی</p>
+        <li class="one_third first"><a href="#"><img src="{% static 'images/demo/17.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/18.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/19.gif' %}" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h2 class="footer_title">لینک های مفید</h2>
+      <div class="tweet-container">
+
+        <ul class="list none">
+
+<li><a href="http://google.com">google.com</a></li>
+
+<li><a href="http://sanaad.medu.ir">سازمان دانش آموزی کشور</a></li>
+
+<li><a href="http://sanjesh.org">سازمان سنجش کشور</a></li>
+        </ul>
+      </div>
+    </div>
+
+	<div class="one_quarter">
+      <h2 class="footer_title">درباره ی ما</h2>
+        <ul class="nospace">
+          <p>شروع به کار این مجموعه از سال 1387 می باشد که حدود 8 سال بعنوان مکتب القران فعالیت داشت و زیر نظر کادر آموزشی علامه طباطبایی بوده است.پس از گذشت چند سال به خواست والدین و مراجعه کنندگان عزیز این آموزشگاه مجوز رسمی خود را از سازمان اموزش و پرورش دریافت نمود.</p>
+<p>و فعالیت خود را درقالب دبستان و پیش دبستان غیردولتی با نام کلام وحی آغاز نمود و تاکنون فعالیت این آموزشگاه ادامه دارد.باشد که به یاری  خداوند متعال و شما عزیزان شاهد پیشرفت این آموزشگاه و تعلیم فرزندان نیکو و صالح باشیم.</p>
+
+
+    </ul></div>
+  </div>
+</div>
+
+<div class="wrapper row4">
+<div id="copyright" class="clear">
+    <p class="fl_right">کلیه خدمات این سایت مختص دبستان و پیش دبستان غیردولتی کلام وحی می باشد.</p>
+    <p class="fl_left">طراحی شده توسط نیلوفر خسروی راد، بشری در تراش</a></p>
+</div>
+</div>
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js' %}"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="{% static 'layout/scripts/jquery-latest.min.js' %}"><\/script>\
+<script src="{% static 'layout/scripts/jquery-ui.min.js' %}"><\/script>')</script>
+<script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script src="{% static 'layout/scripts/responsiveslides.js-v1.53/responsiveslides.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery-mobilemenu.min.js' %}"></script>
+<script src="{% static 'layout/scripts/custom.js' %}"></script>
+
+</body>
+</html>

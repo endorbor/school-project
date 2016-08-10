@@ -1,0 +1,88 @@
+﻿{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+صفحه اصلی
+{% endblock %}
+
+<!-- Slider -->
+{% block slider %}
+<div class="wrapper row1">
+  <div class="rslides_container clear" style="text-align:left;">
+    <ul class="rslides clear" id="rslides">
+      <li><img src="{% static 'images/demo/slider/10.jpg' %}" alt=""></li>
+      <li><img src="{% static 'images/demo/slider/11.jpg' %}" alt=""></li>
+      <li><img src="{% static 'images/demo/slider/12.jpg' %}" alt=""></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+{% endblock %}
+
+<!-- ################################################################################################ -->
+
+<!-- content -->
+{% block content %}
+    <div id="homepage" class="clear">
+      <div class="two_third first">
+	  <h2 style="border-bottom:1px solid #ff9900; color:#ff9900;">فعالیت ها</h2>
+        <div class="clear">
+
+          <article class="one_half first">
+            <h6 class="nospace"><a href="#" style="color:#666666;font-size:16pt;">مراسم دهه فجر </a></h6>
+            <div class="boxholder"><img src="{% static 'images/demo/1200400.gif' %}" alt=""></div>
+            <p>وقایع ۱۲بهمن از ایام‌الله دهه فجر
+
+۱۲بهمن روز ورود روح‌الله خمینی به ایران-در این روز بزرگترین استقبال تاریخ در تهران برگزار شد؛ بطوری که طول جمعیت استقبال کننده از آیت‌الله خمینی به ۳۳ کیلومتر رسیده بود. در ساعت ۹:۵۰ دقیقه بامداد روز دوازدهم بهمن هواپیمای حامل خمینی در میان تدابیر شدید امنیتی در فرودگاه مهرآباد برزمین نشست. خمینی پس از ورود به فرودگاه و ایراد سخنرانی طبق برنامه‌ای که از قبل تنظیم شده بود عازم گورستان بهشت زهرا شد…
+
+خمینی در میان استقبال گسترده مردم تهران در ساعت یک بعد از ظهر وارد قطعه ۱۷ که مدفن شهدای انقلاب بود شد و سخنرانی خود را ایراد نمود. </p>
+            <p>امراسم دهه فجر توسط دانش آموزان عزیز به خوبی برگزار گردید.این مراسم شامل مراسم قران خوانی-مقدمه-سرود- نمایش و پذیرایی بود.</p>
+          </article>
+
+          <article class="one_half">
+            <h6 class="nospace"><a href="#" style="color:#666666;font-size:16pt;">جشن الفبا </a></h6>
+            <div class="boxholder"><img src="{% static 'images/demo/jashn.gif' %}" alt=""></div>
+            <p>امروز به پاس قدردانی  از دانش اموزان کلاس اول مراسم جشن الفبا برگزار گردید در این مراسم قرائت بخشی از کلام الهی - سخنرانی-سرود-نمایش و پذیرایی و اهدا جوایز انجام شد.</p>
+          </article>
+
+        </div>
+
+      </div>
+      <!-- ################################################################################################ -->
+
+      <div class="one_third">
+	  <h2 style="border-bottom:1px solid #ff9900; color:#ff9900;">اخبار</h2>
+        <article class="push30 clear">
+          <div class="one_fifth first"><img src="{% static 'images/demo/20.gif' %}" alt=""></div>
+          <div class="four_fifth">
+            <h2 class="font-large nospace">کتب درسی</h2>
+            <p>باتوجه به آغاز سال تحصیلی 96-95 از خانواده های عزیز خواهشمندیم نسبت به دریافت کتب آموزشی فرزند عزیزتان اقدام نمایید</p>
+            <footer class="read-more"><a href="#">مطالعه بیشتر &raquo;</a></footer>
+          </div>
+        </article>
+        <article class="push30 clear">
+          <div class="one_fifth first"><img src="{% static 'images/demo/21.gif' %}" alt=""></div>
+          <div class="four_fifth">
+            <h2 class="font-large nospace">ثبت نام</h2>
+            <p>با توجه به ظرفیت محدود این آموزشگاه به اطلاع اولیای گرامی میرساند از تاریخ 1395/05/20 هیچ ثبت نامی صورت نمیگیرد. .</p>
+            <footer class="read-more"><a href="#">مطالعه بیشتر &raquo;</a></footer>
+          </div>
+        </article>
+        <article class="push30 clear">
+          <div class="one_fifth first"><img src="{% static 'images/demo/22.gif' %}" alt=""></div>
+          <div class="four_fifth">
+            <h2 class="font-large nospace">کلاس های تابستانی</h2>
+            <p>شروع کلاس های تابستانی این آموزشگاه از تاریخ 95/05/02 میباشد لذا از اولیای گرامی خواهشمندیم برای ثبت نام فرزند عزیزتان در اسرع وقت به آموزشگاه مراجعه کنند لازم به ذکر است فعالیت آموزشگاه در روز های زوج از ساعت 8 الی 12 میباشد.</p>
+            <footer class="read-more"><a href="#">مطالعه بیشتر &raquo;</a></footer>
+          </div>
+        </article>
+
+		<footer class="read-more"><a href="#">سایر اخبار &raquo;</a></footer>
+      </div>
+	<footer class="read-more"><a href="#">سایر فعالیت ها &raquo;</a></footer>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+{% endblock %}
